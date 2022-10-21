@@ -2,7 +2,7 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        leapYear(2000);
+        leapYear(500);
         System.out.println();
         systemSelection(0, 2022);
         System.out.println();
@@ -63,7 +63,7 @@ public class Main {
     private static void leapYear(int year) {
         if (year % 400 == 0) {
             System.out.println(year + " — високосный год");
-        } else if (year % 400 == 0 & year % 4 == 0 && year % 100 != 0) {
+        } else if (year % 4 == 0 && year % 100 != 0) {
             System.out.println(year + " — високосный год");
         } else {
             System.out.println(year + " — не високосный год");
